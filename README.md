@@ -1,68 +1,156 @@
 # Website Audit Tool with Security and Performance Analysis
 
-A web-based tool that analyzes any website for security risks, performance issues, and SEO structure. Built using Python Flask, this tool helps developers and website owners improve their site's safety, speed, and optimization.
+A web-based analysis tool that evaluates websites for security, performance, and technical best practices.  
+This application helps users identify vulnerabilities, optimization issues, and overall website health.
 
 ---
 
 ## Features
 
-### Security Analysis
-- HTTPS availability check  
-- Security headers inspection:
-  - Content-Security-Policy  
-  - X-Frame-Options  
-  - X-Content-Type-Options  
-  - Strict-Transport-Security  
-- Cookie security flag detection  
-
-### Performance Analysis
-- Website response time measurement  
-- Basic performance insights  
-- Optimization suggestions  
-
-### SEO & Structure Analysis
-- Meta title and description check  
-- Heading tag structure analysis (H1, H2…)  
-- Image ALT attribute validation  
-- Link analysis  
-- Robots.txt and sitemap detection  
+- Website performance analysis  
+- Security header inspection  
+- SSL certificate verification  
+- Page load insights  
+- Basic SEO and technical checks  
+- User-friendly interface for entering website URLs  
+- Structured audit results for easy understanding  
 
 ---
 
-## Tech Stack
+## Technologies Used
 
-**Backend**
-- Python  
-- Flask  
-
-**Frontend**
-- HTML  
-- CSS  
-- JavaScript  
-
-**Libraries**
+**Frontend:** HTML, CSS  
+**Backend:** Python  
+**Web Framework:** Flask / Streamlit (depending on your implementation)  
+**Libraries & Tools:**  
 - requests  
 - BeautifulSoup  
-- Flask  
+- ssl / socket  
+- whois (optional)  
+- other Python security and analysis modules  
 
 ---
 
 ## Project Structure
-Website-Audit-Tool/
+
+```
+
+website-audit-tool/
 │
-├── app.py
+├── app.py                 # Main application file
+├── templates/             # HTML templates (if using Flask)
+├── static/                # CSS and static assets
+├── utils/                 # Helper modules for analysis
 ├── requirements.txt
-├── static/
-│   ├── style.css
-│   ├── script.js
-│   └── logo.png
-│
-├── templates/
-│   ├── index.html
-│   ├── about.html
-│   ├── contact.html
-│   ├── privacy.html
-│   └── terms.html
-│
 └── README.md
 
+````
+
+---
+
+## What This Tool Checks
+
+### Security Analysis
+- Presence of important HTTP security headers
+- SSL certificate status
+- HTTPS availability
+
+### Performance Analysis
+- Response time measurement
+- Page size estimation
+- Resource loading checks
+
+### Website Structure
+- Title and meta tag presence
+- Basic SEO indicators
+- Link analysis (optional)
+
+---
+
+## Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/website-audit-tool.git
+cd website-audit-tool
+````
+
+### 2. Create Virtual Environment
+
+```bash
+python -m venv venv
+venv\Scripts\activate        # Windows
+source venv/bin/activate     # Mac/Linux
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Run the Application
+
+### If using Flask:
+
+```bash
+python app.py
+```
+
+### If using Streamlit:
+
+```bash
+streamlit run app.py
+```
+
+Then open your browser at:
+
+```
+http://localhost:5000   (Flask)
+http://localhost:8501   (Streamlit)
+```
+
+---
+
+## How to Use
+
+1. Enter a website URL in the input field
+2. Start the audit
+3. View the analysis results including security and performance findings
+
+---
+
+## Important Disclaimer
+
+This tool provides automated checks for educational and informational purposes only.
+It does not guarantee complete security assessment and should not replace professional security audits.
+
+---
+
+## Future Improvements
+
+* Advanced vulnerability scanning
+* Lighthouse-style performance scoring
+* PDF report export
+* Historical result tracking
+* API integration for automated monitoring
+
+---
+
+## License
+
+This project is open-source and available under the MIT License.
+
+```
+
+---
+
+If you want, I can also create:
+
+- A matching **requirements.txt**
+- A short **GitHub repo description**
+- Deployment steps for hosting it online
+```
