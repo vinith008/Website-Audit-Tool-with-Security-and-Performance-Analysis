@@ -48,4 +48,21 @@ A web-based tool that analyzes any website for security risks, performance issue
 ---
 
 ## Project Structure
+Website-Audit-Tool/
+│
+├── app.py
+├── requirements.txt
+├── static/
+│   ├── style.css
+│   ├── script.js
+│   └── logo.png
+│
+├── templates/
+│   ├── index.html
+│   ├── about.html
+│   ├── contact.html
+│   ├── privacy.html
+│   └── terms.html
+│
+└── README.md
 
